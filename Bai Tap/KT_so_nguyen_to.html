@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số nguyên tố</title>
+</head>
+<body>
+    <h1><b>Kiểm tra số nguyên tố</b></h1>
+    Nhập số vào: 
+    <input type="number" id="so" />
+    <button type="button" onclick="ktnguyento()">Check</button>
+    <script>
+        function ktnguyento(){
+            let socanKT = parseInt(document.getElementById("so").value);
+            if (socanKT ===0 || socanKT===1){
+                alert("Nhập sai mời nhập lại");
+            }
+            else {
+                for(i=1;i<socanKT;i++){
+                    if(socanKT/i==0){
+                        
+                        alert(`Số ${socanKT} không là số nguyên tố`)
+                    }
+                    console.log(i);
+                }
+            }
+        
+        }
+    </script>
+
+</body>
+</html>

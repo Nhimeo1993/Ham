@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+</head>
+<body>
+    <input type="number" id="so_1" />
+    <input type="bumber" id="so_2" />
+    <button type="button" onclick="tinhToan()">Click</button>
+    <div id="print"></div>
+        <script>
+            function tinhToan(){
+                let bien_1 = parseInt(document.getElementById("so_1").value);
+                let bien_2 = parseInt(document.getElementById("so_2").value);
+                let tong = bien_1 + bien_2;
+                if(bien_1>bien_2){
+                    document.getElementById("print").innerHTML = "Bien so 1 lon hon bien so 2" 
+                }
+                else {
+                    document.getElementById("print").innerHTML = `Tong hai soo la + ${tong}`;
+                }
+            }
+        </script>
+</body>
+</html>

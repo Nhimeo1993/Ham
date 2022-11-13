@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+    <h1><b>CHUYỂN ĐỔI NHIỆT ĐỘ</b></h1>
+    <h2>Chuyển từ độ F sang độ C</h2>
+    Nhập độ f:
+    <input type="number" id="doF">
+    <button type="button" onclick="chuyenDoi()">Chuyển</button>
+    <div id="print"></div>
+    <script>
+        function chuyenDoi(){
+            let doF = parseFloat(document.getElementById("doF").value);
+            let doC = (doF-30)/1.8;
+            document.getElementById("print").innerHTML = `Độ C là: ${doC}`;
+        }
+    </script>
+</body>
+</html>
