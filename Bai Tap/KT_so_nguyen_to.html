@@ -18,14 +18,18 @@
                 alert("Nhập sai mời nhập lại");
             }
             else {
-                for(i=1;i<socanKT;i++){
-                    if(socanKT/i==0){
-                        
-                        alert(`Số ${socanKT} không là số nguyên tố`)
-                    }
+                for(i=2;i<socanKT;i++){
+                    if(socanKT%i==0){
+                    alert(`Số ${socanKT} không là số nguyên tố`);    
                     console.log(i);
-                }
-            }
+                    break;
+                    }
+                    else{
+                        alert(`Số ${socanKT} là số nguyên tố`);
+                        break;
+                    }
+                      }
+           }
         
         }
     </script>
